@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: url("../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.section {
+  background: rgb(248, 248, 248);
+  min-height: 100vh;
+}
+
+h2 {
+  border-top: 1px solid rgb(217, 255, 245);
+  color: rgb(126, 126, 130);
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  background: linear-gradient(
+    270deg,
+    rgb(255, 255, 255),
+    rgb(248, 248, 248) 98.614%
+  );
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  gap: 16px 32px;
+  padding-top: 24px;
+  padding-left: 32px;
+}
+
+.brand {
+  min-width: 240px !important;
+  max-width: 240px !important;
+  min-height: 72px !important;
+  max-height: 72px !important;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__hidden1120 {
+  display: none;
+}
+
+.brand__flex1120 {
+  display: flex;
+}
+
+.button-hide-show {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "TT Lakes Medium", sans-serif;
+  color: rgb(27, 28, 33);
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.button-hide-show--hide-1120px {
+  display: none;
+}
+
+.swiper-button-prev {
+  opacity: 0 !important;
+}
+.swiper-button-next {
+  opacity: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .brands {
+    transform: translate3d(0px, 0px, 0px) /*!important*/;
+  }
+  .swiper-pagination-bullet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1120px) {
+  .brand__hidden768 {
+    display: none;
+  }
+
+  .brand {
+    min-width: 224px !important;
+    max-width: 224px !important;
+  }
+
+  .brands {
+    display: grid;
+    grid-template-columns: 224px 224px 224px;
+    padding-left: 24px;
+    gap: 16px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  .swiper-slide {
+    min-width: 240px !important;
+    max-width: 240px !important;
+    min-height: 72px !important;
+    max-height: 72px !important;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: rgb(181, 182, 188);
+    width: 12px;
+    height: 12px;
+  }
+  .button-hide-show {
+    display: none;
+  }
+
+  .brands {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+}
